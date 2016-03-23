@@ -16,8 +16,8 @@ struct uart {
 
 int uart_open(struct uart *uart);
 int uart_close(struct uart *uart);
-int uart_recv(struct uart *uart, char *data, unsigned int data_len);
-int uart_send(struct uart *uart, char *data, unsigned int data_len);
+int uart_recv(struct uart *uart, char *data, unsigned int data_len);	//return recv data number
+int uart_send(struct uart *uart, char *data, unsigned int data_len);	//return send data number
 
 #ifdef __cplusplus
 }

@@ -134,7 +134,7 @@ int uart_send(struct uart *uart, char *data, unsigned int data_len)
 
 	send_len = write(uart->uart_fd, data, data_len);
 	if (send_len != data_len)
-		return 0;
+		return send_len;
 
-	return 1;
+	return send_len;
 }
